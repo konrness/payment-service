@@ -12,3 +12,4 @@ COPY ./payment-service/target/*.jar payment-service.jar
 EXPOSE 8080
 
 CMD ["java","-jar","-agentpath:./harness/lib/libETAgent.so","payment-service.jar"]  
+ 
